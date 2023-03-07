@@ -2,6 +2,9 @@ import streamlit
 
 streamlit.header('How was your drink? ☕')
 
+
+st.stop()
+
 import pandas
 import requests
 import snowflake.connector
