@@ -1,5 +1,4 @@
 import streamlit
-import pandas
 
 streamlit.header('How was your drink? ☕')
 
