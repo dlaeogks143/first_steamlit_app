@@ -7,10 +7,10 @@ import requests
 import snowflake.connector
 from urllib.error import URLError
 
+st.stop()
+
 Coffee_menu = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 Coffee_menu = coffee_menu.set_index('drink')
-
-st.stop()
 
 # What was your drink
 fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado', 'Strawberries'])
