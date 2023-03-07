@@ -9,6 +9,6 @@ my_cur = my_cnx.cursor()
 my_cur.execute("SELECT * FROM COFFEE_MENU")
 my_data_row = my_cur.fetchall()
 streamlit.text("HERE IS OUR COFFEE MENU")
-streamlit.text(my_data_row)
+streamlit.dataframe(my_data_row)
 
 
